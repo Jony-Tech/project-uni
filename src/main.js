@@ -5,7 +5,6 @@ import Intro from './scenes/Intro.js'
 const config = {
 
     // OPCIONALES
-    title: 'Titulo Juego',
     url: 'http://enmilocalfunciona.io',
     version: '0.0.1',
 
@@ -16,14 +15,13 @@ const config = {
     type: Phaser.AUTO, // WEBGL O CANVAS O AUTOMATICO
     backgroundColor: '#34495E', // FONDO DEL LIENZO
     scale: {
-        width: 900, // TAMAÑO DEL LIENZO
+        width: 700, // TAMAÑO DEL LIENZO
         height: 360,
         parent: 'container', // ID DEL CONTENEDOR
         mode: Phaser.Scale.FIT,
         // autoCenter: Phaser.Scale.CENTER_BOTH
         autoCenter: Phaser.Scale.CENTER_HORIZONTALLY
     },
-
     // INFORMACIÓN DE LA CONSOLA
     banner: {
         hidePhaser: true, // OCULTAR TEXTO DE PHASER EN CONSOLA

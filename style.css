@@ -1,20 +1,54 @@
-/* body{
-    margin:0;
+* {
     padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #1d1d1d;
-    width: 100vw;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
     height: 100vh;
-} */
-
-
+    font-family: 'Rubik', sans-serif;
+}
 .all{
     display: flex;
 }
-
+h1{
+    text-align: center;
+    padding: 10px 0px 15px 0px;
+    color: #000000;
+}
+h2{
+    padding: 7px;
+}
+p{
+    color: #000000;
+    padding-bottom: 5px;
+}
 .videoC canvas{
     position: absolute;
     margin-left: -720px;
 }
+.section-video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+.info-section-video, .videogame{
+    background-color: #ffffff;
+    /* backdrop-filter: blur(15px); */
+    border: 1px solid rgba(255, 255, 255, .25);
+    border-radius: 20px;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+    padding: 10px;
+}
+.section-info{
+    text-align: center;
+}
+.section-videogame{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+

@@ -8,20 +8,35 @@
     <script src="face-api.min.js" defer></script>
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body style="overflow: hidden">
     <div class="all">
       <div class="section-video">
-        <div class="videoC">
-          <video id="video" autoplay muted width="720" height="540"></video>
-        </div>
-        <div class="section-info">
-          <span id="expressionInfo"></span>
-          <span id="ageInfo"></span>
+        <div class="info-section-video">
+          <h1>FACIAL RECOGNITION</h1>
+          <div class="videoC">
+            <video id="video" autoplay muted width="720" height="540"></video>
+          </div>
+          <div class="section-info">
+            <h2>You look like</h2>
+            <p id="expressionInfo"></p>
+            <p id="ageInfo"></p>
+            <p id="genderInfo"></p>
+          </div>
         </div>
       </div>
 
-      <div id="container"></div>
+      <div class="section-videogame">
+        <div class="videogame">
+          <div id="container"></div>
+        </div>
+      </div>
     </div>
 
     <script src="phaser.min.js"></script>

@@ -55,19 +55,10 @@ elVideo.addEventListener('play', async() => {
         // faceapi.draw.drawFaceExpressions(canvas, resizedDetections)
 
         resizedDetections.forEach(detection => {
-            // const box = detection.detection.box;
-            const ageInfo = Math.round(detection.age) + ' years ' + detection.gender;
-            const expressionInfo =printHtml(detection.expressions);
-
             
-            
-
-            // new faceapi.draw.DrawBox (box, {
-            //     label: Math.round(detection.age) + ' años ' + detection.gender
-            // }).draw(canvas)
-
-            document.getElementById('ageInfo').textContent = ageInfo;
-            document.getElementById('expressionInfo').textContent = expressionInfo;
+            document.getElementById('genderInfo').textContent = detection.gender;
+            document.getElementById('ageInfo').textContent = `${Math.round(detection.age)} years old`;
+            document.getElementById('expressionInfo').textContent = printHtml(detection.expressions);
         },100);
         
     })
@@ -90,7 +81,7 @@ elVideo.addEventListener('play', async() => {
                 emotion = e;
             }
         }
-        return `${emotion} : ${valueEmotion}`
+        return `${Math.round(valueEmotion * 100)}% ${emotion}`
     }
 })
 //neutral: 96%, happy: 2%, sad: 0%, angry: 1%, fearful: 0%, disgusted: 0%, surprised: 0%
