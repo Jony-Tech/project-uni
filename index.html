@@ -11,11 +11,19 @@
   </head>
   <body style="overflow: hidden">
     <div class="all">
-      <section class="videoC">
-        <video id="video" autoplay muted width="720" height="540"></video>
-      </section>
+      <div class="section-video">
+        <div class="videoC">
+          <video id="video" autoplay muted width="720" height="540"></video>
+        </div>
+        <div class="section-info">
+          <span id="expressionInfo"></span>
+          <span id="ageInfo"></span>
+        </div>
+      </div>
+
       <div id="container"></div>
     </div>
+
     <script src="phaser.min.js"></script>
     <script src="src/main.js" type="module"></script>
   </body>
