@@ -21,7 +21,7 @@ class Intro extends Phaser.Scene {
     create() {
 
 
-        this.introText = this.add.text(0,0,"PRESS SPACE TO START", { fontStyle: 'strong', align: 'right', font: '54px Arial', fill: 'red' });
+        this.introText = this.add.text(0,0,"PRESS SPACE TO START", { fontStyle: 'strong', align: 'right', font: '54px Arial', fill: 'white' });
        
         // CREATE KEYBOARD CURSOS
         this.cursors = this.input.keyboard.createCursorKeys();

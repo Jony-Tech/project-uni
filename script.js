@@ -62,15 +62,6 @@ elVideo.addEventListener('play', async() => {
         },100);
         
     })
-    function getExpresionesInfo(expresiones) {
-    // Convierte el objeto de expresiones en una cadena legible
-    const expresionesArray = Object.entries(expresiones).map(([expresion, probabilidad]) => {
-        return `${expresion}: ${Math.round(probabilidad * 100)}`;
-    });
-
-    // Combina las expresiones en una cadena
-    return expresionesArray.join(', ');
-    }
     function printHtml(expressions){
         let emotion = '';
         let valueEmotion = 0
@@ -84,4 +75,3 @@ elVideo.addEventListener('play', async() => {
         return `${Math.round(valueEmotion * 100)}% ${emotion}`
     }
 })
-//neutral: 96%, happy: 2%, sad: 0%, angry: 1%, fearful: 0%, disgusted: 0%, surprised: 0%

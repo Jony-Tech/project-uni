@@ -13,7 +13,7 @@ const config = {
 
     // OBLIGATORIO
     type: Phaser.AUTO, // WEBGL O CANVAS O AUTOMATICO
-    backgroundColor: '#34495E', // FONDO DEL LIENZO
+    backgroundColor: '#2575fc', // FONDO DEL LIENZO
     scale: {
         width: 700, // TAMAÑO DEL LIENZO
         height: 360,
@@ -25,7 +25,7 @@ const config = {
     // INFORMACIÓN DE LA CONSOLA
     banner: {
         hidePhaser: true, // OCULTAR TEXTO DE PHASER EN CONSOLA
-        text: '#000000', // CAMBIAR COLOR DEL TEXTO DEL TITULO DEL JUEGO EN CONSOLA
+        text: '#ffffff', // CAMBIAR COLOR DEL TEXTO DEL TITULO DEL JUEGO EN CONSOLA
          // PALETA DE COLORES DE ADORNO EN CONSOLA
         background: [
             'red',
