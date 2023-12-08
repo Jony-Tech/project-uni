@@ -28,8 +28,11 @@ elVideo.addEventListener('play', async() => {
     const canvas = faceapi.createCanvasFromMedia(elVideo)
     //Lo add al body
     // document.body.append(canvas)
-    let videoC = document.querySelector(".videoC")
-    videoC.appendChild(canvas)
+    // let videoC = document.querySelector(".videoC")
+    // videoC.appendChild(canvas)
+    let canva = document.getElementById("canva");
+    console.log(canva);
+    canva.appendChild(canvas)
 
     //size del canvas
     const displaySize = {width: elVideo.width, height: elVideo.height};

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mi juego</title>
+    <title>Projecto</title>
     <script src="face-api.min.js" defer></script>
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css" />
@@ -17,25 +17,21 @@
   </head>
   <body style="overflow: hidden">
     <div class="all">
-      <div class="section-video">
-        <div class="info-section-video">
-          <h1>FACIAL RECOGNITION</h1>
-          <div class="videoC">
-            <video id="video" autoplay muted width="620" height="440"></video>
-          </div>
-          <div class="section-info">
-            <h2>You look like</h2>
-            <p id="expressionInfo"></p>
-            <p id="ageInfo"></p>
-            <p id="genderInfo"></p>
-          </div>
+      <div class="card">
+        <h1>FACIAL RECOGNITION</h1>
+        <div id="canva">
+          <video id="video" autoplay muted width="620" height="440"></video>
+        </div>
+        <div class="section-info">
+          <h2>You look</h2>
+          <p id="expressionInfo"></p>
+          <p id="ageInfo"></p>
+          <p id="genderInfo"></p>
         </div>
       </div>
 
-      <div class="section-videogame">
-        <div class="videogame">
-          <div id="container"></div>
-        </div>
+      <div class="card">
+        <div id="container"></div>
       </div>
     </div>
 
